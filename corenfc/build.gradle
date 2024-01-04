@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id "com.vanniktech.maven.publish"
+}
+
+android {
+    namespace 'com.corenfc'
+    compileSdk build_versions.compileSdk
+
+    defaultConfig {
+        minSdk build_versions.minSdk
+        targetSdk build_versions.targetSdk
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+
+    implementation "androidx.appcompat:appcompat:$versions.appcompat"
+    implementation 'com.google.android.material:material:1.8.0'
+    testImplementation "junit:junit:$versions.junit"
+    androidTestImplementation "androidx.test.ext:junit:$versions.androidExtJunit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espressoCore"
+
+    //NFC Reader Dependencies
+    implementation 'net.sf.scuba:scuba-sc-android:0.0.18'
+    implementation 'com.madgag.spongycastle:prov:1.54.0.0'
+    implementation 'com.github.mhshams:jnbis:1.1.0'
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.65' // do not update
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'org.jmrtd:jmrtd:0.7.18'
+    implementation 'com.google.code.gson:gson:2.10'
+}

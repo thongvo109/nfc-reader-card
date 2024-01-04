@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="edit_text">#F2F2F4</color>
+    <color name="transparentColor">#80FFFFFF</color>
+    <color name="button_background">#FFEB3B</color>
+    <color name="text_subContent">#80000000</color>
+    <color name="text_content">#000000</color>
+    <color name="background">#BE1128</color>
+    <color name="text_highLight">#BE1128</color>
+    <color name="line">#D3D8DE</color>
+    <color name="hightlight_blue">#006FD6</color>
+</resources>

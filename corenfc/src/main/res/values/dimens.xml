@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="corner_radius" type="integer">24dp</dimen>
+    <dimen name="top_constraint" type="integer">90dp</dimen>
+    <dimen name="size_content">14sp</dimen>
+    <dimen name="sub_content">12sp</dimen>
+</resources>

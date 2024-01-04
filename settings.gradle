@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "cardreader"
+include ':app'
+include ':opencv'
+include ':opencv-armv7a'
+include ':wechat-qrcode'
+include ':wechat-qrcode-scanning'
+include ':corenfc'
